@@ -1,0 +1,18 @@
+[Unit]
+Description=Exeter-Check-In
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/INSERT_USERNAME/Desktop/Exeter-Check-In/src
+User=INSERT_USERNAME
+Restart=on-failure
+RestartSec=3
+ExecStart=python3 -u auto.py
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target
+
+# sudo cp Check-In.service /etc/systemd/system/Check-In.service
+# sudo journalctl -xe -f -u Check-In.service
