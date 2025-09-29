@@ -54,7 +54,7 @@ IMPORTANT: Complete steps 1 ~ 3 **_before_** moving on to step 4.
 
 Run the script at the time of your event. The script will determine which event is scheduled and complete the check-in process automatically.
 
-1. Open a new tab in your browser.
+1. Open a new tab in your terminal.
 1. Navigate to the project directory:
    ```bash
    cd path/to/Exeter-Check-In
